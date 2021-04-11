@@ -33,13 +33,64 @@ Status ListEmpty(SqList L) {
 }
 //顺序表插入函数
 Status ListInsert_Sq(SqList& L, int i, ElemType e) {
-	L.elem[i] = e;
+	int k; 
+	//顺序线性表已经满
+	if (L.length == LIST_INIT_SIZE)
+	{
+		return ERROR;
+	}
+	//当i不在范围内
+	if (i<1 || i>L.length + 1)
+	{
+		return ERROR;
+	}
+	if (i <= L.length)
+	{
+		//将要插入位置后数据元素向后移动一位
+		for (k = L.length - 1; k >= i - 1; k--)
+		{
+			L.elem[k + 1] = L.elem[k];
+
+		}
+		
+	}
+	//将新元素插入
+	L.elem[i - 1] = e;
+	L.length++;
+	return OK;
 }
 
 
 //顺序表删除元素函数
 Status ListDelete_Sq(SqList& L, int i, ElemType& e) {
-	//请在此填写代码，将该算法补充完整，参见课本和课件相关章节
+	int k;
+	//线性表为空
+	if (L.length == 0)
+	{
+		return ERROR;
+	}
+	//删除位置不正确
+	if (i<1 || i>L.length)
+	{
+		return ERROR;
+	}
+	e = L.elem[i - 1];
+	if (i < L.length)
+	{
+		//将要删除后继元素前移
+		for (k = i; k <L.length; k++)
+		{
+			L.elem[k - 1] = L.elem[k];
+
+		}
+		L.length--;
+		return OK;
+
+	}
+	
+	//总长度减少
+	L.length--;
+	return OK;
 }
 
 //输出顺序表函数
