@@ -17,9 +17,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "栈进制之间转换", "�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "深度优先搜索", "深度优先搜索\深度优先搜索.vcxproj", "{C9A642EB-1162-4482-B980-059FEED2002E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "顺序表的实现和运算", "线性表的实现和运算\线性表的实现和运算.vcxproj", "{63A266A5-734E-487E-BF3B-C4A33138CE45}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "测试", "测试\测试.vcxproj", "{28D92CDD-47D3-4656-B558-1C888F16CC99}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "顺序表的实现和运算", "顺序表的实现和运算\顺序的实现和运算.vcxproj", "{63A266A5-734E-487E-BF3B-C4A33138CE45}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,14 +91,6 @@ Global
 		{63A266A5-734E-487E-BF3B-C4A33138CE45}.Release|x64.Build.0 = Release|x64
 		{63A266A5-734E-487E-BF3B-C4A33138CE45}.Release|x86.ActiveCfg = Release|Win32
 		{63A266A5-734E-487E-BF3B-C4A33138CE45}.Release|x86.Build.0 = Release|Win32
-		{28D92CDD-47D3-4656-B558-1C888F16CC99}.Debug|x64.ActiveCfg = Debug|x64
-		{28D92CDD-47D3-4656-B558-1C888F16CC99}.Debug|x64.Build.0 = Debug|x64
-		{28D92CDD-47D3-4656-B558-1C888F16CC99}.Debug|x86.ActiveCfg = Debug|Win32
-		{28D92CDD-47D3-4656-B558-1C888F16CC99}.Debug|x86.Build.0 = Debug|Win32
-		{28D92CDD-47D3-4656-B558-1C888F16CC99}.Release|x64.ActiveCfg = Release|x64
-		{28D92CDD-47D3-4656-B558-1C888F16CC99}.Release|x64.Build.0 = Release|x64
-		{28D92CDD-47D3-4656-B558-1C888F16CC99}.Release|x86.ActiveCfg = Release|Win32
-		{28D92CDD-47D3-4656-B558-1C888F16CC99}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
