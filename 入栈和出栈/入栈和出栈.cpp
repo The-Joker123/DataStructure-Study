@@ -16,7 +16,9 @@ typedef struct {
 	int top;
 	int size;
 	int increment;//扩容时，增加的存储容量
-	
+	  
+	 
+
 }SqStack;
 //构造一个空栈S
 Status InitStack(SqStack& S) {
